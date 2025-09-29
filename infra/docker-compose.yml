@@ -2,7 +2,7 @@ version: "3.9"
 
 services:
   api:
-    build: ./api
+    build: ../api
     container_name: info_api
     ports:
       - "8000:8000"
@@ -14,7 +14,7 @@ services:
       - ml_stub
 
   ml_stub:
-    build: ./ml_stub
+    build: ../ml_stub
     container_name: info_ml_stub
     ports:
       - "5000:5000"
