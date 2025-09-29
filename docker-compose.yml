@@ -1,0 +1,8 @@
+# 1) отправить событие
+curl -X POST "http://localhost:8000/ingest" -H "Content-Type: application/json" -d '{"source":"OSINT","text":"Peaceful protest observed in Almaty","meta":{"lang":"en"}}'
+
+# 2) посмотреть список
+curl "http://localhost:8000/events"
+
+# 3) посмотреть summary
+curl "http://localhost:8000/analytics/summary"
